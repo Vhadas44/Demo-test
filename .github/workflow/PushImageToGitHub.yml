@@ -14,7 +14,7 @@ on: push
         uses: docker/login-action@v2
         witth:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
-          password: ${{ secrets.GIT_HUB_TOKEN }}
+          password: ${{ secrets.DOCKER_GIT_TOKEN }}
 
       - name: Build and push Docker image
         uses: docker/buiild-push-action@v4
